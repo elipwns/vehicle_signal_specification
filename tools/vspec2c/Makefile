@@ -15,7 +15,7 @@ HDR=vehicle_signal_specification.h
 all: ${LIB_TARGET} ${SO_TARGET}
 
 ${SO_TARGET}: ${OBJ}
-	${CC} -shared ${CFLAGS} -o ${SO_TARGET} ${OBJ}
+	${LD} -shared ${LDFLAGS} -o ${SO_TARGET} ${OBJ}
 
 ${LIB_TARGET}: ${OBJ}
 	ar r $(LIB_TARGET) $(OBJ)
