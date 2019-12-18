@@ -19,7 +19,7 @@
   description: Fan Speed, 0 = off. 100 = max
 
 - Temperature:
-  datatype: int8
+  datatype: float
   type: actuator
   min: -50
   max: 50
